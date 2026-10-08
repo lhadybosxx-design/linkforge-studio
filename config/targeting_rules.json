@@ -1,0 +1,45 @@
+{
+  "topic_to_communities": {
+    "machine_learning": {
+      "reddit": ["MachineLearning", "datascience", "learnmachinelearning", "artificial", "deeplearning", "LLMDevs"],
+      "twitter_hashtags": ["#MachineLearning", "#AI", "#DataScience"],
+      "linkedin_topics": ["Artificial Intelligence", "Machine Learning"]
+    },
+    "web_development": {
+      "reddit": ["webdev", "javascript", "reactjs", "node", "frontend", "typescript"],
+      "twitter_hashtags": ["#WebDev", "#JavaScript", "#ReactJS"],
+      "linkedin_topics": ["Web Development", "Frontend Engineering"]
+    },
+    "devops": {
+      "reddit": ["devops", "kubernetes", "docker", "aws", "cloudcomputing", "terraform"],
+      "twitter_hashtags": ["#DevOps", "#Kubernetes", "#Cloud"],
+      "linkedin_topics": ["DevOps", "Cloud Computing"]
+    },
+    "saas": {
+      "reddit": ["SaaS", "startups", "Entrepreneur", "indiehackers", "microsaas", "buildinpublic"],
+      "twitter_hashtags": ["#SaaS", "#Startup", "#BuildInPublic"],
+      "linkedin_topics": ["SaaS", "Entrepreneurship"]
+    },
+    "cybersecurity": {
+      "reddit": ["netsec", "cybersecurity", "AskNetsec", "blueteamsec", "malware"],
+      "twitter_hashtags": ["#CyberSecurity", "#InfoSec"],
+      "linkedin_topics": ["Cybersecurity", "Information Security"]
+    },
+    "adtech": {
+      "reddit": ["adops", "adtech", "programmatic", "PPC", "digital_marketing"],
+      "twitter_hashtags": ["#AdTech", "#Programmatic", "#PPC"],
+      "linkedin_topics": ["AdTech", "Digital Advertising"]
+    },
+    "general": {
+      "reddit": ["programming", "technology", "software", "coding", "opensource"],
+      "twitter_hashtags": ["#Tech", "#Programming", "#OpenSource"],
+      "linkedin_topics": ["Technology", "Software"]
+    }
+  },
+  "negative_keywords": {
+    "politics": ["election", "trump", "biden", "vote", "senate"],
+    "adult": ["nsfw", "adult", "explicit", "xxx"],
+    "gambling": ["casino", "betting", "poker", "lottery"],
+    "controversial": ["crypto_pump", "mlm", "pyramid", "get_rich_quick"]
+  }
+}

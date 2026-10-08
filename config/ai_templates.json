@@ -1,0 +1,28 @@
+{
+  "templates": [
+    "I built {topic} — here's what I learned about {keyword}",
+    "After {n} months, I finally finished {topic}. AMA about {keyword}",
+    "{topic} — a free open-source tool for {keyword}",
+    "Just released: {topic}. It solves {keyword} in a new way",
+    "Made {topic} because existing {keyword} tools were too complicated",
+    "{keyword} got easier — introducing {topic}",
+    "Open-sourcing my {topic}. Feedback on {keyword} welcome!",
+    "Spent {n} weeks on {topic} — sharing my {keyword} journey",
+    "The {keyword} problem: my new {topic} tries to fix it",
+    "{topic} — feedback welcome from anyone doing {keyword}"
+  ],
+  "synonyms": {
+    "built": ["created", "made", "developed", "shipped", "launched", "released"],
+    "tool": ["app", "project", "utility", "platform", "library", "framework"],
+    "free": ["open-source", "community-driven", "MIT-licensed", "no-cost"],
+    "learned": ["discovered", "realized", "figured out", "found"],
+    "feedback": ["thoughts", "opinions", "critique", "input"]
+  },
+  "comment_seed_templates": [
+    "Happy to answer any questions about the implementation!",
+    "The trickiest part was {keyword} — took me a while to figure out.",
+    "Built this after struggling with {keyword} myself. Hope it helps!",
+    "Feedback welcome — especially on the {keyword} approach.",
+    "Made it open-source because I wished something like this existed."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "global": {
+    "max_links_per_day_total": 12,
+    "relevance_score_threshold": 70,
+    "enable_dry_run": true,
+    "warmup_mode": true,
+    "warmup_days": 14,
+    "local_port": 5000
+  },
+  "reddit": {
+    "max_posts_per_day": 5,
+    "min_interval_minutes": 120,
+    "jitter_minutes": 30,
+    "enforce_90_10_rule": true,
+    "min_karma_required": 50,
+    "max_self_promo_ratio": 0.10,
+    "shadowban_check": true,
+    "comment_seeding": true
+  },
+  "twitter": {
+    "max_original_posts_per_day": 25,
+    "min_interval_minutes": 45,
+    "jitter_minutes": 15,
+    "require_unique_content": true
+  },
+  "linkedin": {
+    "max_posts_per_week": 5,
+    "min_interval_hours": 24,
+    "business_hours_only": true
+  }
+}

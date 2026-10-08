@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkForge — Live Dashboard</title>
+  <meta http-equiv="refresh" content="30">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>📊 Live Dashboard</h1>
+    <nav>
+      <a href="/">Control Panel</a>
+      <a href="/dashboard" class="active">Live Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="updated">Updated: {{ updated }} UTC · auto-refresh 30s</div>
+
+    <div class="stat-grid">
+      <div class="stat"><div class="label">Posts</div><div class="value">{{ stats.posts }}</div></div>
+      <div class="stat"><div class="label">Clicks</div><div class="value">{{ stats.clicks }}</div></div>
+      <div class="stat"><div class="label">Impressions</div><div class="value">{{ stats.impressions }}</div></div>
+      <div class="stat"><div class="label">CTR</div><div class="value">{{ stats.ctr }}%</div></div>
+    </div>
+
+    <section class="card">
+      <h2>Recent Posts</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Platform</th><th>Community</th><th>Title</th>
+            <th>Posted</th><th>Clicks</th><th>Impr.</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for p in posts %}
+          <tr>
+            <td>{{ p[0] }}</td>
+            <td>{{ p[1] }}</td>
+            <td>r/{{ p[2] }}</td>
+            <td>{{ p[3][:60] }}</td>
+            <td>{{ p[4][:16] }}</td>
+            <td>{{ p[5] }}</td>
+            <td>{{ p[6] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

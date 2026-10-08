@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkForge Studio — Control Panel</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 LinkForge Studio</h1>
+    <nav>
+      <a href="/" class="active">Control Panel</a>
+      <a href="/dashboard">Live Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>1. GitHub Repository</h2>
+      <input id="repoUrl" type="text" placeholder="https://github.com/user/repo">
+      <button id="analyzeBtn">Analyze Topic</button>
+      <div id="analyzeResult"></div>
+    </section>
+
+    <section class="card">
+      <h2>2. SEO & Link Generation</h2>
+      <input id="keywords" type="text" placeholder="keyword1, keyword2, keyword3">
+      <input id="baseUrl" type="text" placeholder="https://your-site.com">
+      <input id="numLinks" type="number" value="10" min="1" max="100">
+      <button id="generateBtn">Generate Links</button>
+      <div id="linksResult"></div>
+    </section>
+
+    <section class="card">
+      <h2>3. Target Communities</h2>
+      <p class="hint">Uses topic vector to find relevant subreddits (score ≥ 70).</p>
+      <button id="findBtn">Find Relevant Communities</button>
+      <div id="communitiesResult"></div>
+    </section>
+
+    <section class="card">
+      <h2>4. Distribute</h2>
+      <label>
+        <input type="checkbox" id="dryRun" checked>
+        Dry run (simulate posts, don't actually post)
+      </label>
+      <button id="postBtn" class="primary">Start Distribution</button>
+      <div id="postResult"></div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
