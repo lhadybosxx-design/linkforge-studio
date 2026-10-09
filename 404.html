@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Preserve the requested path so the homepage can read it if needed
+    (function() {
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var parts = path.split('/').filter(Boolean);
+      var slug = parts.length > 0 ? parts[parts.length - 1] : 'home';
+
+      // Build the destination: repo root with slug as query param
+      // Adjust '/linkforge-studio/' if your repo name differs
+      var base = '/linkforge-studio/';
+      var dest = base + '?from=' + encodeURIComponent(slug);
+
+      // Preserve any UTM params
+      if (search) {
+        dest += '&' + search.replace(/^\?/, '');
+      }
+
+      window.location.replace(dest);
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/linkforge-studio/">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting to <a href="/linkforge-studio/">the homepage</a>...</p>
+</body>
+</html>
