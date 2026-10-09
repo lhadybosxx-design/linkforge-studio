@@ -1,4 +1,4 @@
-venv/
+﻿venv/
 __pycache__/
 *.pyc
 *.pyo
@@ -9,4 +9,5 @@ logs/*
 repos/*
 !repos/.gitkeep
 config/platforms.json
+config/oauth_apps.json
 .DS_Store
